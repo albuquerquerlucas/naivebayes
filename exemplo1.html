@@ -24,7 +24,143 @@
 
         <section>
             <div class="container">
-                Aqui dentro vai todo o texto
+                <h3>Fábrica de Sandálias</h3>
+
+                <p><strong>Motivação</strong></p>
+                <p>
+                    Aqui vai o texto sobre o problema a ser solucionado com a aplicação do teorema.
+                </p>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                Tabela de dados da empresa:
+                            </div>
+                            <div class="panel-body">
+
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Máquina</th>
+                                        <th>Produto</th>
+                                        <th>Total Produzido</th>
+                                        <th>Produtos Defeituosos</th>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/maquina1.png"></td>
+                                        <td><img src="img/pantufa.png"></td>
+                                        <td>50%</td>
+                                        <td>1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/maquina2.png"></td>
+                                        <td><img src="img/chinelo.png"></td>
+                                        <td>40%</td>
+                                        <td>2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/maquina3.png"></td>
+                                        <td><img src="img/salto.png"></td>
+                                        <td>10%</td>
+                                        <td>3%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                Dados Observados:
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td>P(A1) =</td>
+                                        <td>0,5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P(A2) =</td>
+                                        <td>0,4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P(A3) =</td>
+                                        <td>0,1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P(B | A1) =</td>
+                                        <td>0,01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P(B | A2) =</td>
+                                        <td>0,02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P(B | A3) =</td>
+                                        <td>0,03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P(B) =</td>
+                                        <td>0,016</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                Resolução:
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <b>P(A | B) = </b>
+                                    </div>
+                                </div><br/>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <input type="text" id="pBA" size="5" placeholder="P(B | A)" /> <b> X </b>
+                                        <input type="text" id="pA" size="5" placeholder="P(A)" />
+                                    </div>
+                                </div><br/>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <b>dividido por </b>
+                                        <input type="text" id="pB" size="5" placeholder="P(B)" />
+                                    </div>
+                                </div><br/>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <Button onclick="calcular()" class="btn btn-primary">calcular</Button>
+                                    </div>
+                                </div><br/>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <p id="resultado"></p>
+                                    </div>
+                                </div><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                Conclusão:
+                            </div>
+                            <div class="panel-body">
+                                <p id="conclusao"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section><br/>
 
